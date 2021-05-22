@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    
+}
+header{
+    background-color: white;
+    border-top: solid #572EE5 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100vw;
+    height: 25vw;
+
+    img{
+        padding: 4vw;        
+    }
+    label{
+        padding: 4vw;
+    }
+
+    ul{
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        background-color: #572EE5;
+        opacity: 00%;
+        list-style: none;
+        padding-top: 10vw;
+        li{
+            font-family: 'Montserrat';
+            margin: 3vw;
+            &:hover{
+                border-bottom: 2px solid #5ED7C6 ;
+               }
+               &:active{
+                 color: #9CAFC3;
+                border-bottom: 0px;  
+            }
+            
+            
+        }
+        .bordesito{
+        width: 41px;
+        height: 0.1px;
+        background-color: white;
+        }
+    }
+    input:checked ~ ul {
+        display: flex;
+        opacity: 90%;
+    }
+
+
+
+    //Menu hamburguesa//
+    input{
+        display:none;
+    }
+    .burguer{
+        display: block;
+    }
+    input:checked ~ .burger {
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    input:checked ~ .close {
+        display: block;
+    }
+    //Menu hamburguesa//
+}

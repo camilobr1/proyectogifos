@@ -1,3 +1,9 @@
-body{
-    background-color: blue;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+
+@import 'header';
+@import 'inicio';
+@import 'mascotas';
+@import 'trendinggifos';
+@import 'footer';
+@import 'favoritos';
