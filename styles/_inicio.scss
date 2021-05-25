@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-
+    font-family: 'Montserrat';
 
     h1{
         color: #572EE5;
@@ -14,10 +14,12 @@
         text-align: center;
         display: inline-block;
         margin-bottom: 8vw;
+        max-width: 900px;
         
     }
     .img_header{
         width: 80vw;
+        max-width: 400px;
     }
     .buscador{
         border: 1px #572EE5 solid;
@@ -26,6 +28,7 @@
         height: 50px;
         display: flex;
         justify-content: space-around;
+        max-width: 551px;
         input{
             border: 0px solid;
             border-radius: 25px;
@@ -49,7 +52,7 @@
         color: #572EE5;
         font-size: 1rem;
         margin-top: 7vw;
-        font-weight: 600;
+        font-family: 'Montserrat';
     }
     p{
         color: #572EE5;
@@ -57,6 +60,7 @@
         width: 76vw;
         text-align: center;
         margin-top: 3vw;   
+        font-family: 'Montserrat';
     }
     .separador{
         width: 40%;
@@ -66,3 +70,25 @@
         opacity: 0.5;
     }
 }   
+@media screen and (min-width: 500px){
+    .inicio{
+        margin-top: 5vw;
+        h1{
+            font-size: 35px;
+            width: 50%;
+            margin-bottom: 4vw;
+        }
+        h2{
+            margin-top: 4vw;
+            font-size: 18px;
+        }
+        p{
+            margin-top: 1vw;
+            font-size: 1rem;
+        }
+        .separador{
+            display: none;
+            padding: 0px;
+        }
+    }
+}
