@@ -8,7 +8,8 @@
 }
 
 header {
-  border-top: solid #572EE5 5px;
+  background-color: #37383C;
+  border-top: solid #572EE5 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +49,7 @@ header ul {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  background-color: #572EE5;
+  background-color: black;
   opacity: 00%;
   list-style: none;
   padding-top: 10vw;
@@ -98,6 +99,7 @@ header input:checked ~ .burger {
 
 header .close {
   display: none;
+  border: 0px;
 }
 
 header input:checked ~ .close {
@@ -129,6 +131,7 @@ header input:checked ~ .close {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 1vw;
+    background-color: #37383C;
     color: #572EE5;
     font-size: 1rem;
   }
@@ -144,6 +147,7 @@ header input:checked ~ .close {
 }
 
 .inicio {
+  background-color: #37383C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +166,7 @@ header input:checked ~ .close {
 }
 
 .inicio h1 {
-  color: #572EE5;
+  color: white;
   font-size: 1.5rem;
   width: 76vw;
   text-align: center;
@@ -177,7 +181,7 @@ header input:checked ~ .close {
 }
 
 .inicio .buscador {
-  border: 1px #572EE5 solid;
+  border: 1px white solid;
   border-radius: 25px;
   width: 90%;
   height: 50px;
@@ -199,6 +203,7 @@ header input:checked ~ .close {
   height: 100%;
   padding-left: 10%;
   outline: none;
+  background-color: #37383C;
 }
 
 .inicio .buscador .lupa {
@@ -220,14 +225,14 @@ header input:checked ~ .close {
 }
 
 .inicio h2 {
-  color: #572EE5;
+  color: white;
   font-size: 1rem;
   margin-top: 7vw;
   font-family: 'Montserrat';
 }
 
 .inicio p {
-  color: #572EE5;
+  color: white;
   font-size: 14px;
   width: 76vw;
   text-align: center;
@@ -344,7 +349,7 @@ header input:checked ~ .close {
 }
 
 .trending_gifos {
-  background-color: #F3F5F8;
+  background-color: #222326;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +371,7 @@ header input:checked ~ .close {
 }
 
 .trending_gifos h2 {
-  color: #572EE5;
+  color: white;
   font-size: 1.5rem;
   font-family: 'Montserrat';
 }
@@ -377,6 +382,7 @@ header input:checked ~ .close {
   font-size: 1rem;
   margin: 5vw;
   font-family: 'roboto';
+  color: white;
 }
 
 .trending_gifos div {
@@ -424,13 +430,14 @@ footer {
           align-items: center;
   width: 100vw;
   max-height: 116px;
-  border-bottom: solid #572EE5 5px;
+  border-bottom: solid #572EE5 0px;
 }
 
 footer h4 {
   font-size: 13px;
   margin: 1vw;
   font-family: 'Roboto';
+  color: white;
 }
 
 footer .redes {
@@ -544,4 +551,4 @@ button:active {
   color: #9CAFC3;
   border-bottom: 0px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylenoc.css.map */

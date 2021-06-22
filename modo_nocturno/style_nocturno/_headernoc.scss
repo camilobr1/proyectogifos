@@ -5,8 +5,8 @@
     
 }
 header{
-    
-    border-top: solid #572EE5 5px;
+    background-color: #37383C;
+    border-top: solid #572EE5 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ header{
         align-items: center;
         flex-direction: column;
         color: white;
-        background-color: #572EE5;
+        background-color: black;
         opacity: 00%;
         list-style: none;
         padding-top: 10vw;
@@ -76,6 +76,7 @@ header{
     }
     .close{
         display: none;
+        border: 0px;
     }
     input:checked ~ .close {
         display: block;
@@ -103,7 +104,7 @@ header{
             flex-wrap: nowrap;
             justify-content: flex-end;
             padding: 1vw;
-            
+            background-color: #37383C;
             color:#572EE5;
             font-size: 1rem;
             
