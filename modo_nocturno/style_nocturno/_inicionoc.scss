@@ -26,28 +26,50 @@
         border: 1px white solid;
         border-radius: 25px;
         width: 90%;
-        height: 50px;
+        height: auto;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         max-width: 551px;
-        input{
-            border: 0px solid;
-            border-radius: 25px;
+        div{
             display: flex;
-            width: 90%;
-            height: 100%;
-            padding-left: 10%;
-            outline: none;
-background-color: #37383C;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%; 
+            input{
+                border: 0px solid;
+                border-radius: 25px;
+                display: flex;
+                width: 90%;
+                height: 100%;
+                padding-left: 10%;
+                outline: none;
+                background-color: #37383C;
+            }
+            .lupa{
+                padding-right: 10%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
-        .lupa{
-            padding-right: 10%;
-            position: relative;
-            display: flex;
+        .opcionesBuscador{
+            display: none;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
+            li{
+                padding: 1vw;
+                list-style: none;
+                color: gray;
+                font-size: 1rem;
+                padding-left: 10%;
+            }
         }
+}
+
+       
     }
     h2{
         color: white;
@@ -70,7 +92,7 @@ background-color: #37383C;
         margin: 10vw;
         opacity: 0.5;
     }
-}   
+   
 @media screen and (min-width: 500px){
     .inicio{
         margin-top: 5vw;

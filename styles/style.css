@@ -7,8 +7,19 @@
   font-family: 'Montserrat';
 }
 
-header {
+body {
   border-top: solid #572EE5 5px;
+  border-bottom: solid #572EE5 5px;
+}
+
+.bodydark {
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+  background-color: #37383C;
+  color: white;
+}
+
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,6 +63,7 @@ header ul {
   opacity: 00%;
   list-style: none;
   padding-top: 10vw;
+  font-family: 'Montserrat';
 }
 
 header ul li {
@@ -129,8 +141,10 @@ header input:checked ~ .close {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 1vw;
+    background-color: white;
     color: #572EE5;
     font-size: 1rem;
+    font-family: 'Montserrat';
   }
   header ul .bordesito {
     display: none;
@@ -180,16 +194,35 @@ header input:checked ~ .close {
   border: 1px #572EE5 solid;
   border-radius: 25px;
   width: 90%;
-  height: 50px;
+  height: auto;
+  padding: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-width: 551px;
 }
 
-.inicio .buscador input {
+.inicio .buscador div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.inicio .buscador div input {
   border: 0px solid;
   border-radius: 25px;
   display: -webkit-box;
@@ -201,7 +234,66 @@ header input:checked ~ .close {
   outline: none;
 }
 
-.inicio .buscador .lupa {
+.inicio .buscador div .lupa {
+  padding-right: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio .buscador .opcionesBuscador {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inicio .buscador .opcionesBuscador li {
+  padding: 1vw;
+  list-style: none;
+  color: gray;
+  font-size: 1rem;
+  padding-left: 10%;
+}
+
+.inicio .buscador_dark {
+  border: 1px white solid;
+  border-radius: 25px;
+  width: 90%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 551px;
+}
+
+.inicio .buscador_dark input {
+  border: 0px solid;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  padding-left: 10%;
+  outline: none;
+}
+
+.inicio .buscador_dark .lupa {
   padding-right: 10%;
   position: relative;
   display: -webkit-box;
@@ -267,7 +359,9 @@ header input:checked ~ .close {
 }
 
 .contenedores {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -332,7 +426,9 @@ header input:checked ~ .close {
 }
 
 .mascotas {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .fav {
@@ -361,7 +457,6 @@ header input:checked ~ .close {
   max-width: 100vw;
   max-height: 640px;
   margin-top: 15vw;
-  overflow: hidden;
   padding: 15vw;
 }
 
@@ -379,19 +474,102 @@ header input:checked ~ .close {
   font-family: 'roboto';
 }
 
-.trending_gifos div {
+.trending_gifos .gifTrendings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: unset;
-      flex-wrap: unset;
-  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.trending_gifos div img {
-  width: 243px;
-  height: 187px;
-  margin: 2vw 0px 0px 3vw;
+.trending_gifos .gifTrendings #contenedorGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2%;
+  background-color: blueviolet;
+  width: 20vw;
+  height: 20vw;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  margin: 0px;
+  width: 20vw;
+  height: 20vw;
+  background-color: #572EE5;
+  position: absolute;
+  opacity: 0;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card h2 {
+  margin: 50% 0 0 3%;
+  color: white;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card p {
+  margin: 5% 0 0 3%;
+  color: white;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  position: relative;
+  margin: 0px 0px 0px 55%;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card .botones img {
+  margin: 8px 8px 0px 0px;
+  opacity: 60%;
+}
+
+.trending_gifos .gifTrendings #contenedorGif #card .botones img:hover {
+  opacity: 2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.trending_gifos .gifTrendings #contenedorGif .gif {
+  width: 20vw;
+  height: 20vw;
+  background-color: aqua;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+
+.trending_gifos .gifTrendings #contenedorGif .gif img {
+  width: 20vw;
+  height: 20vw;
 }
 
 @media screen and (min-width: 500px) {
@@ -401,10 +579,6 @@ header input:checked ~ .close {
   }
   .trending_gifos h3 {
     margin: 1vw;
-  }
-  .trending_gifos img {
-    width: 357px;
-    height: 275px;
   }
 }
 
@@ -424,7 +598,6 @@ footer {
           align-items: center;
   width: 100vw;
   max-height: 116px;
-  border-bottom: solid #572EE5 5px;
 }
 
 footer h4 {

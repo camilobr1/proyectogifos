@@ -4,9 +4,18 @@
     font-family: 'Montserrat';
     
 }
-header{
-    
+body{
     border-top: solid #572EE5 5px;
+    border-bottom: solid #572EE5 5px;
+}
+.bodydark{
+     border-top: solid black 5px;
+    border-bottom: solid black 5px;
+    background-color: #37383C;
+    color: white;
+}
+
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +24,7 @@ header{
     width: 100vw;
     height: 25vw;
     max-height: 90px;
+    
     
     
 
@@ -38,6 +48,7 @@ header{
         opacity: 00%;
         list-style: none;
         padding-top: 10vw;
+        font-family: 'Montserrat';
         li{
             font-family: 'Montserrat';
             margin: 3vw;
@@ -84,6 +95,7 @@ header{
 }
 @media screen and (min-width: 500px){
     header{
+        
         img{
          
             padding: 1vw;      
@@ -103,10 +115,10 @@ header{
             flex-wrap: nowrap;
             justify-content: flex-end;
             padding: 1vw;
-            
+            background-color: white;
             color:#572EE5;
             font-size: 1rem;
-            
+            font-family: 'Montserrat';
                 
                     .bordesito{
                         display: none;

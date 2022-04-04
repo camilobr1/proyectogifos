@@ -4,6 +4,12 @@
     font-family: 'Montserrat';
     
 }
+
+body{
+    background-color: #37383C;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
 header{
     background-color: #37383C;
     border-top: solid #572EE5 0px;
@@ -41,6 +47,7 @@ header{
         li{
             font-family: 'Montserrat';
             margin: 3vw;
+            color: white;
             &:hover{
                 border-bottom: 2px solid #5ED7C6 ;
                }

@@ -1,5 +1,5 @@
 .contenedores{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,8 @@
     
 }
     .mascotas{
-        display: none;
+        display: flex
+     
 
     }
     .fav{

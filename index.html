@@ -5,61 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Gifos Camilo Bravi</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link id="style"  rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body id="body" >
 <!-- Inicio de header-->
-<header>
-    <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-mobile.svg" alt="logo">
+<header id="mod_noc">
+    <img id="logo" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-desktop.svg" alt="logo">
     <input type="checkbox" id="checkbox" name="checkbox">
-    <label for="checkbox" class="burger"><img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/burger.svg" alt="burger"></label>
-    <label for="checkbox" class="close"><img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg" alt="close"></label>
+    <label for="checkbox" class="burger" ><img id="burger" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/burger.svg" alt="burger"></label>
+    <label for="checkbox" class="close" ><img id="closer" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg" alt="close"></label>
 
-    <ul>
-        <li  >Modo Nocturno</li>
+    <ul >
+        <li id="activar_modonocturno" >Modo Nocturno</li>
         <li class="bordesito"></li>
         <li>Favoritos </li>
         <li class="bordesito"></li>
         <li>Mis GIFOS</li>
-        <li class="creargifo"><img src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg" alt="creargifo"></li>
+        <li class="creargifo" ><img id="btn_creargifo" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg" alt="creargifo"></li>
         
     </ul>
 </header>
 <!-- Fin de header-->
 <!-- Inicio-->
-<nav class="inicio">
-    <h1>Inspírate, busca, guarda y crea los mejores <span style="color: #5ED7C6;"> GIFOS </span> </h1>
-    <img class="img_header" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/ilustra_header.svg" alt="headerda">
-    <div class="buscador">
-        <input type="text" id=texto name= texto placeholder="Busca GIFOS y más">
-        <label for="texto" class="lupa"><img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search"></label>
+<nav class="inicio" id="mod_noc">
+    <h1  id="mod_noc"  >Inspírate, busca, guarda y crea los mejores <span style="color: #5ED7C6;"> GIFOS </span> </h1>
+    <img class="img_header" id="mod_noc" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/ilustra_header.svg" alt="headerda">
+    <div class="buscador" id="mod_noc">
+        <div>
+        <nav id="lupa2"></nav>
+        <input type="text" class=texto id="mod_noc" name= texto placeholder="Busca GIFOS y más">
+        <label for="texto" class="lupa"><img class="lupa" id="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search"></label>
+        </div>
+        <ul class='opcionesBuscador'>
+           
+            
+        </ul>
+
     </div>   
-    <h2>Trending:</h2> 
-    <p>Reactions, Entertainment, Sports, Stickers, Artist</p>
+    <h2 id="mod_noc">Trending:</h2> 
+    <p id="mod_noc" >Reactions, Entertainment, Sports, Stickers, Artist</p>
     <div class="separador"></div>
 </nav>
+
 <!-- Inicio-->
 <!-- Mascotas-->
-<nav class="contenedores mascotas" >
-    <h2>  Mascotas</h2>
-    <div class="contenedor_mascotas">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
+ <nav  class="contenedores mascotas" >
+     <h2 id="tituloBusqueda"></h2>
+    <div class="contenedor_mascotas" id="prueba1">
+        
     </div>
     <button>VER MÁS</button>
-
 </nav>
-<!-- Mascotas-->
+ 
 <!-- favoritos-->
 <nav class="contenedores fav">
     <img class="img_favoritos" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-favoritos.svg" alt="favoritos">
@@ -103,20 +100,21 @@
 </nav>
 <!-- favoritos-->
 <!-- Trending Gifos-->
-<nav class="trending_gifos">
-    <h2>Trending GIFOS</h2>
-    <h3>Mira los últimos GIFOS de nuestra comunidad.</h3>
-    <div>
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
+<nav class="trending_gifos" id="trending_dark">
+    <h2 id="trending_dark">Trending GIFOS</h2>
+    <h3 id="trending_dark">Mira los últimos GIFOS de nuestra comunidad.</h3>
+    <div id="trending_dark" class="gifTrendings">
+      
     </div>
+
+    
 </nav>
 <!-- Trending Gifos-->
 
 <!-- footer-->
-<footer>
-    <h4>Compartir en:</h4>
-    <div class="redes">
+<footer id="mod_noc">
+    <h4 id="mod_noc">Compartir en:</h4>
+    <div class="redes" id="mod_noc">
         <img src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon_facebook.svg" alt="icon_facebook">
         <img src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-twitter.svg" alt="icon_twitter">
         <img src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon_instagram.svg" alt="icon_instagram">
@@ -125,6 +123,6 @@
     <h4>© GIFOS 2020 All Rights Reserved.</h4>
 </footer>
 <!-- footer-->
-
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>
