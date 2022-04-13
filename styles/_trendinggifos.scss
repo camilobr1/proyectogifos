@@ -1,13 +1,14 @@
 .trending_gifos{
     background-color: #F3F5F8;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     max-width: 100vw;
     max-height: 640px;
     margin-top: 15vw;
-    
+    overflow: scroll;
     padding: 15vw;
     h2{
         color: #572EE5;
@@ -25,69 +26,26 @@
         
 
     }
-    .gifTrendings{
+    .gifTrendingContainer{
         display: flex;
         flex-direction: row;
-        #contenedorGif{
-        display: flex;
-        flex-direction: row;
-        margin: 2%;
-        background-color: blueviolet;
-        width: 20vw;
-        height: 20vw;
-            #card{
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-content: space-around;
-                margin: 0px;
-                width: 20vw;
-                height: 20vw;        
-                background-color: #572EE5;
-                position: absolute;
-                opacity: 0;
-                
-                &:hover{
-                    opacity: 0.7;
-                    transition: 0.6s;
-                }
-                h2{
-                    margin: 50% 0 0 3%;
-                    color: white;
-                }
-                p{
-                    margin: 5% 0 0 3%;
-                    color: white;
-                }           
-                .botones{           
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-content: flex-end;
-                    position: relative;
-                    margin: 0px 0px 0px 55%;   
-                        img{
-                            margin: 8px 8px 0px 0px;
-                            opacity: 60%;
-                            &:hover{
-                                opacity: 2;
-                                transition: 0.4s;
-                            }   
-                        }   
-                    } 
-                }  
-            .gif{
-                width: 20vw;
-                height: 20vw;
-                background-color: aqua;
-                position: absolute;
-                margin: 0px;
-                padding: 0px; 
-                img{
-                    width: 20vw;
-                    height: 20vw;
-                }
-            }
+        overflow: scroll; 
+
+        .gifStyle{
+            width: 22vw;
+            height: 17vw;
+            display: flex;
+            flex-direction: row;
+            
+            padding: 2vw;
+          img{
+            width: 224px;
+            height: 17vw;
+            
+        }  
         }
+        
+        
         
         
             
