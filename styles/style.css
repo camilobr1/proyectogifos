@@ -470,6 +470,63 @@ header input:checked ~ .close {
   display: none;
 }
 
+#contenedorSearchs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+}
+
+#contenedorSearchs #contenedorImagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#contenedorSearchs #contenedorImagenes .gifStyle img {
+  width: 156px;
+  height: 120px;
+  margin: 3vw;
+}
+
+#contenedorSearchs button {
+  color: #572EE5;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-top: 10vw;
+}
+
+#contenedorSearchs button:hover {
+  background-color: #572EE5;
+  color: white;
+}
+
+#contenedorSearchs button:active {
+  color: #9CAFC3;
+  border-bottom: 0px;
+}
+
 .trending_gifos {
   background-color: #F3F5F8;
   display: -webkit-box;
@@ -495,7 +552,7 @@ header input:checked ~ .close {
 }
 
 .trending_gifos h2 {
-  color: #572EE5;
+  color: rgba(87, 46, 229, 0.7);
   font-size: 1.5rem;
   font-family: 'Montserrat';
 }
@@ -520,8 +577,8 @@ header input:checked ~ .close {
 }
 
 .trending_gifos .gifTrendingContainer .gifStyle {
-  width: 22vw;
-  height: 17vw;
+  width: 25vw;
+  height: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,11 +587,89 @@ header input:checked ~ .close {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 2vw;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .trending_gifos .gifTrendingContainer .gifStyle img {
-  width: 224px;
-  height: 17vw;
+  width: 25vw;
+  height: 20vw;
+  position: absolute;
+  z-index: 3;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle .tarjeta {
+  width: 25vw;
+  height: 20vw;
+  position: absolute;
+  opacity: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 40% 10% 10% 25%;
+      grid-template-columns: 15% 40% 10% 10% 25%;
+  -ms-grid-rows: 20% 35% 10% 10% 25%;
+      grid-template-rows: 20% 35% 10% 10% 25%;
+  z-index: 2;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle .tarjeta .botones {
+  overflow: hidden;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0px;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle .tarjeta .botones img {
+  width: 3vw;
+  height: 3vw;
+  position: relative;
+  margin: 0.5vw 0 0 0;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle .tarjeta p {
+  color: white;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  margin-left: 1vw;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle .tarjeta h1 {
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle:hover img {
+  z-index: 2;
+}
+
+.trending_gifos .gifTrendingContainer .gifStyle:hover .tarjeta {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(87, 46, 229, 0.7);
+  z-index: 3;
 }
 
 @media screen and (min-width: 500px) {

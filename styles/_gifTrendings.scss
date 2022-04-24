@@ -27,11 +27,12 @@
     flex-direction: row-reverse;
     align-content: flex-end;
     position: absolute;
-
     margin: 0px 0px 0px 55%;
     opacity: 100%;
+    z-index: 1;
     img {
       margin: 8px 8px 0px 0px;
+      z-index: 2;
     }
   }
 
