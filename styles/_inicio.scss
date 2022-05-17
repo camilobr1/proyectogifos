@@ -36,8 +36,10 @@
         div{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
+            justify-content: space-evenly;
+            width: 90%;
+           
+            
                    
             input{
                 border: 0px solid;
@@ -63,6 +65,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;  
+                margin-bottom: 3%;
             }
            
         }
@@ -80,8 +83,9 @@
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: flex-end;
+                    margin: 0px 0px 0px 4%;
                     img{
-                        margin-right: 10%;
+                        margin-right: 3%;
                     }
                 }
             }
@@ -137,7 +141,7 @@
 }   
 @media screen and (min-width: 500px){
     .inicio{
-        margin-top: 5vw;
+        
         h1{
             font-size: 35px;
             width: 50%;

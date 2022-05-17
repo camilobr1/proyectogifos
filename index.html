@@ -8,19 +8,27 @@
     <link id="style"  rel="stylesheet" href="./styles/style.css">
 </head>
 <body id="body" >
+    <!-- Gif Max-->
+<div id="gifMax">
+</div>
+<!-- Gif Max-->
 <!-- Inicio de header-->
 <header class="mod_noc">
     <img id="logo" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-desktop.svg" alt="logo">
     <input type="checkbox" id="checkbox" name="checkbox">
     <label for="checkbox" class="burger" ><img id="burger" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/burger.svg" alt="burger"></label>
     <label for="checkbox" class="close" ><img id="closer" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg" alt="close"></label>
-
+    <div class="buscadorHeader" id="buscadorHeader">
+        <nav id="lupa2"><img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search"></nav>
+        <input type="text" id="input_buscador" class="mod_noc" name= texto placeholder="Busca GIFOS y más">
+        <label for="texto" class="lupa"><img class="lupa" id="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search"></label>
+    </div>
     <ul >
         <li id="activar_modonocturno" >Modo Nocturno</li>
         <li class="bordesito"></li>
-        <li>Favoritos </li>
+        <li id="accesoFavoritos">  Favoritos</li>
         <li class="bordesito"></li>
-        <li>Mis GIFOS</li>
+        <li id="accesoMisGifos">Mis GIFOS</li>
         <li class="creargifo" ><img id="btn_creargifo" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg" alt="creargifo"></li>
         
     </ul>
@@ -46,66 +54,81 @@
     <p class="mod_noc" >Reactions, Entertainment, Sports, Stickers, Artist</p>
     <div class="separador"></div>
 </nav>
-
-<!-- Inicio-->
 <!-- Busqueda-->
-
  <div id="contenedorSearchs">
      <div id="contenedorImagenes"></div>
      <button id="vermas1">VER MÁS</button> 
  </div>
- 
-<!-- favoritos-->
-<nav class="contenedores fav">
+
+ <!-- Favoritos-->
+ <div class="contenedores favoritos" id="divFavoritos">
     <img class="img_favoritos" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-favoritos.svg" alt="favoritos">
     <h2>Favoritos</h2>
-    <div class="contenedor_mascotas">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
+    <div id="contenedorFavoritos">
+        <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav-sin-contenido.svg" alt="">
+        <p id="textoFav">
+            "¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"
+        </p>
     </div>
     <button>VER MÁS</button>
-</nav>
-<!-- favoritos-->
-<!-- favoritos-->
-<nav class="contenedores misgifos">
+ </div>
+ <!-- Mis Gifos-->
+ <div class="contenedores" id="divMisGifos">
     <img class="img_favoritos" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-mis-gifos.svg" alt="misgifos">
     <h2>Mis GIFOS</h2>
-    <div class="contenedor_mascotas">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
-        <img src="https://via.placeholder.com/150" alt="img">
+    <div class="contenedor_mascotas" id="contenedorMisGifos">
+       <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-mis-gifos-sin-contenido.svg" alt="">
     </div>
     <button>VER MÁS</button>
-</nav>
-<!-- favoritos-->
+</div>
+
+<!-- Crear Gif-->
+<div id="divCrearGif">
+    <div id="contenedorCrearGif">
+        <div id="camara">
+            <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/camara.svg" alt="camara">
+            <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/element-luz-camara.svg" alt="camara">
+        </div>
+        <div id="zonaGrabacion">
+            <div class="borde supIzq"></div>
+            <div class="borde supDer"></div>
+            <div id="centro">
+                <h1 id="tituloCrearGif">Aquí podrás <br> crear tus propios <span style="color: #5ED7C6;">GIFOS</span> </h1>
+                <p id="pCrearGif">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
+                
+            </div>   
+            <div class="borde infDer"></div>
+            <div class="borde infIzq"></div>
+            <div id="subiendoGif">
+                <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/loader.svg" alt="" id="cargando">
+                <p id="pcargando">Estamos subiendo tu GIFO</p>
+            </div>     
+        </div>
+        <img src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/pelicula.svg" alt="" id="movie">
+    </div>
+    <div id="pagination">
+        <div class="numero" id="paso1">1</div>
+        <div class="numero" id="paso2">2</div>
+        <div class="numero" id="paso3">3</div>  
+        <div id="timer">
+            <p id="segundero">00:00:00</p>
+            <a id="repetirCaptura"> Repetir Captura</a>
+        </div>      
+    </div>
+    <div class="border"></div>
+    <button id="comenzar">COMENZAR</button>
+    <button id="grabar">GRABAR</button>
+    <button id="stop">FINALIZAR</button>
+    <button id="subir">SUBIR GIFO</button>
+    
+</div>
+<!-- Crear Gif-->
 <!-- Trending Gifos-->
-<nav class="trending_gifos" >
+<nav class="trending_gifos" id="trending_gifos" >
     <h2 >Trending GIFOS</h2>
     <h3 >Mira los últimos GIFOS de nuestra comunidad.</h3>
-    <div  class="gifTrendingContainer">
-      
-    </div>
-
-    
+    <div  class="gifTrendingContainer"> 
+    </div> 
 </nav>
 <!-- Trending Gifos-->
 
@@ -121,6 +144,9 @@
     <h4>© GIFOS 2020 All Rights Reserved.</h4>
 </footer>
 <!-- footer-->
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 <script src="./scripts/scripts.js"></script>
+<script src="./scripts/favoritos.js"></script>
+<script src="./scripts/maximizar.js"></script>
 </body>
 </html>

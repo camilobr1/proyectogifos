@@ -11,7 +11,7 @@
         font-family: 'Montserrat';
         
     }
-    .contenedor_mascotas{
+    .contenedor{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -42,18 +42,18 @@
             border-bottom: 0px;  
         }
     }
-    
+    .favoritos{
+        display: none;
+        background-color: #572EE5;
+    }
 }
     .mascotas{
         display: flex
      
 
     }
-    .fav{
-        display: none;
-        
-    }
-    .misgifos{
+    
+    #divMisGifos{
         display: none;
         
     }
