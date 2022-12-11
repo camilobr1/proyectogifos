@@ -4,23 +4,24 @@
     font-family: 'Montserrat';
     
 }
-
 body{
-    background-color: #37383C;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+   
+    border-bottom: solid #000000 5px;
+    background-color: #37383c;
 }
+
 header{
-    background-color: #37383C;
-    border-top: solid #572EE5 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 25vw;
     max-height: 90px;
+    background-color: #37383c;
+    border-top: solid #000000 5px;
+    z-index: 100;
     
     
 
@@ -32,22 +33,73 @@ header{
     label{
         padding: 4vw;
     }
+    .buscadorHeader{
+        border: 1px white solid;
+        border-radius: 25px;
+        width: 90%;
+        height: auto;
+        min-height: 4vw;
+        //max-height: 50px;
+        
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 551px;
+        align-items: center;
+        
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 90%;
+           
+            
+                   
+          
+            .lupa{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #lupa2{
+                position: relative;
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+                margin-bottom: 3%;
+            }
+           
+        }
+        width: 25%;
+        input{
+            border: 0px solid;
+            border-radius: 25px;
+            display: flex;
+            width: 90%;
+            height: 100%;
+            background-color: #37383c;
+            outline: none;
+        }
+    }
 
     ul{
-        width: 100vw;
-        height: 100vh;
+       
         display: none;
         align-items: center;
         flex-direction: column;
         color: white;
-        background-color: black;
+        background-color: #572EE5;
         opacity: 00%;
         list-style: none;
         padding-top: 10vw;
+        font-family: 'Montserrat';
         li{
             font-family: 'Montserrat';
             margin: 3vw;
-            color: white;
             &:hover{
                 border-bottom: 2px solid #5ED7C6 ;
                }
@@ -83,7 +135,6 @@ header{
     }
     .close{
         display: none;
-        border: 0px;
     }
     input:checked ~ .close {
         display: block;
@@ -92,6 +143,7 @@ header{
 }
 @media screen and (min-width: 500px){
     header{
+        
         img{
          
             padding: 1vw;      
@@ -104,17 +156,17 @@ header{
         ul{
             display: flex;
             opacity: 100%;
-            height: 100%;
-            max-width: 80%;
+            height: 70%;
+            max-width: 60%;
             max-height: 90px;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: flex-end;
             padding: 1vw;
-            background-color: #37383C;
-            color:#572EE5;
+            background-color: #37383c;
+            color: white;
             font-size: 1rem;
-            
+            font-family: 'Montserrat';
                 
                     .bordesito{
                         display: none;

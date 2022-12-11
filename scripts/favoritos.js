@@ -7,6 +7,8 @@ const  contenedorFavoritos = document.getElementById('contenedorFavoritos')
 let arrayFavoritos = []
 divFavoritos.style.display= 'none';
 
+
+
 const guardarLocalStorage = ()=>{
     localStorage.setItem('GifFavoritos', JSON.stringify(arrayFavoritos))
     localStorage.setItem('MisGifos', JSON.stringify(arrayMisGifos))
@@ -78,10 +80,7 @@ accesoFavoritos.addEventListener('click', ()=>{
         
         contenedorFavoritos.appendChild(divGif)
         corazon2.addEventListener('click',()=>{
-           
-         
-            arrayFavoritos.push(agregarFav)
-           guardarLocalStorage()
+        
             
         })
         corazon2.addEventListener('mouseover', ()=>{
@@ -89,6 +88,20 @@ accesoFavoritos.addEventListener('click', ()=>{
         })
         corazon2.addEventListener('mouseout', ()=>{
             corazon2.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg')
+        })
+        corazon2.addEventListener('click',()=>{
+            
+            console.log('Hola ' + resp[0].title)
+            let hijo = document.getElementById(resp[0].title)
+            
+            arrayFavoritos.splice(i,1)
+            console.log(hijo)
+            contenedorFavoritos.removeChild(hijo)
+            
+            
+
+            
+            
         })
         descarga.addEventListener('click',()=>{
             console.log('Descargar ' + element.title  )
@@ -197,7 +210,7 @@ btn_creargifo.addEventListener('click', ()=>{
 contenedorFavoritos.style.display = 'flex';
 contenedorFavoritos.style.width = '90%';
 contenedorFavoritos.style.flexWrap = 'wrap';
-
+contenedorFavoritos.style.marginTop= '10vw'
 
 
 

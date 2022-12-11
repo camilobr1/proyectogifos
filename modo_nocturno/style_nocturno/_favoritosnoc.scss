@@ -1,5 +1,5 @@
-.favoritos{
-    display: flex;
+#favoritos{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,34 +13,21 @@
         height: 21px;
         padding: 10vw 0px 2vw 0px;
     }
-    .contenedor_mascotas{
-        display: flex;
-        flex-direction: row;
+    .contenedorFavoritos{
+        display: none;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
         width: 100vw; }
-    
+            #textoFav{
+                background-color: #572EE5;
+            }
+
             img{
                 width: 156px;
                 height: 120px;
                 padding: 4vw;
             }
-        }
-        button{
-            color: #572EE5;
-            border: 1px solid #572EE5;
-            border-radius: 25px;
-            padding: 1rem 2rem 1rem 2rem;
             
-            margin-top: 10vw;
-    
-            &:hover{
-                background-color: #572EE5;
-                color: white;
-               }
-               &:active{
-                 color: #9CAFC3;
-                border-bottom: 0px;  
-            }
-        }
+    }

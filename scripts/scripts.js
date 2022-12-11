@@ -7,6 +7,7 @@ const contenido_buscador = document.getElementById('contenido_buscador')
 const lupa = document.getElementById('lupa')
 const lupa2 = document.getElementById('lupa2')
 const contenedorSearchs = document.getElementById('contenedorSearchs')
+//const contenedorFavoritos = document.getElementById('contenedorFavoritos')
 const contenedorImagenes = document.getElementById('contenedorImagenes')
 const vermas1 = document.getElementById('vermas1')
 const accesoMisGifos = document.getElementById('accesoMisGifos')
@@ -35,8 +36,10 @@ const segundero = document.getElementById('segundero')
 const repetirCaptura = document.getElementById('repetirCaptura')
 const contenedorMisGifos = document.getElementById('contenedorMisGifos')
 const buscadorHeader = document.getElementById('buscadorHeader')
-
-
+const style = document.getElementById('style')
+const activar_modonocturno = document.getElementById('activar_modonocturno')
+const activar_mododiurno = document.getElementById('activar_mododiurno')
+const lupanoc1 = document.getElementById('lupanoc1')
 
 
 
@@ -462,6 +465,9 @@ contenido_buscador.style.margin= '3%'
 contenedorMisGifos.style.display = 'flex';
 contenedorMisGifos.style.width = '90%';
 contenedorMisGifos.style.flexWrap = 'wrap';
+contenedorSearchs.style.display='none'
+
+
 // BARRA DE BUSQUEDA EN HEADER
 let ubicacionScroll = window.pageYOffset;
 
@@ -479,8 +485,31 @@ window.onscroll = ()=>{
     }
 
 }
+// MODO NOCTURNO 
+activar_mododiurno.style.display= 'none'
+activar_modonocturno.addEventListener('click', ()=>{
+    style.href='./modo_nocturno/style_nocturno/stylenoc.css'
+    activar_mododiurno.style.display= 'block'
+    activar_modonocturno.style.display= 'none'
+    logo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/Logo-modo-noc.svg'
+    btn_creargifo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/CTA-crar-gifo-modo-noc.svg'
+    lupanoc1.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
+    lupa2.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
+    lupa.src='/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg'
+})
 
-
+// MODO DIURNO
+activar_modonocturno.style.display= 'block'
+activar_mododiurno.addEventListener('click', ()=>{
+    style.href='./styles/style.css'
+    activar_mododiurno.style.display= 'none'
+    activar_modonocturno.style.display= 'block'
+    logo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-desktop.svg'
+    btn_creargifo.src= './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg'
+    lupanoc1.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
+    lupa2.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
+    lupa.src='/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg'
+})
 
 
 
