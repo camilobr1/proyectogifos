@@ -57,11 +57,11 @@ accesoFavoritos.addEventListener('click', ()=>{
         img.setAttribute('src', resp[0].images.original.url)
         title.textContent = resp[0].title
         username.textContent = resp[0].username
-        corazon2.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg" )
+        corazon2.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg" )
         corazon2.setAttribute('class', "corazon" )
-        descarga.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg" )
+        descarga.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg" )
         descarga.setAttribute('class', "descarga" )
-        maximizar.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg")
+        maximizar.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg")
         maximizar.setAttribute('class', "maximizar")
 
         contenedorBotones.appendChild(corazon2)
@@ -84,10 +84,10 @@ accesoFavoritos.addEventListener('click', ()=>{
             
         })
         corazon2.addEventListener('mouseover', ()=>{
-            corazon2.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-hover.svg')
+            corazon2.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-hover.svg')
         })
         corazon2.addEventListener('mouseout', ()=>{
-            corazon2.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg')
+            corazon2.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg')
         })
         corazon2.addEventListener('click',()=>{
             
@@ -109,10 +109,10 @@ accesoFavoritos.addEventListener('click', ()=>{
             
         })
         descarga.addEventListener('mouseover', ()=>{
-            descarga.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download-hover.svg')
+            descarga.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download-hover.svg')
         })
         descarga.addEventListener('mouseout', ()=>{
-            descarga.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg')
+            descarga.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg')
         })
         maximizar.addEventListener('click',()=>{
             divGifMax.style.display = 'flex';
@@ -122,7 +122,7 @@ accesoFavoritos.addEventListener('click', ()=>{
             const salirGifMax = document.createElement('img')
             const divSalirGifMax = document.createElement('div')
             const divbotonesTitulo = document.createElement('div')
-            salirGifMax.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
+            salirGifMax.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
 
             divSalirGifMax.setAttribute('id', 'salirGifMax')
             divSalirGifMax.appendChild(salirGifMax)
@@ -165,10 +165,10 @@ accesoFavoritos.addEventListener('click', ()=>{
 
         })
         maximizar.addEventListener('mouseover', ()=>{
-            maximizar.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-hover.svg')
+            maximizar.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-hover.svg')
         })
         maximizar.addEventListener('mouseout', ()=>{
-            maximizar.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg')
+            maximizar.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg')
         })
                 
         

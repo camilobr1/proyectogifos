@@ -72,11 +72,11 @@ const showGif = (trendings, contenedor,)=>{
         img.setAttribute('src', element.images.original.url)
         title.textContent = element.title
         username.textContent = element.username
-        corazon.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav.svg" )
+        corazon.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav.svg" )
         corazon.setAttribute('class', "corazon" )
-        descarga.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg" )
+        descarga.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg" )
         descarga.setAttribute('class', "descarga" )
-        maximizar.setAttribute('src', "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg")
+        maximizar.setAttribute('src', "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg")
         maximizar.setAttribute('class', "maximizar")
 
         contenedorBotones.appendChild(corazon)
@@ -108,10 +108,10 @@ const showGif = (trendings, contenedor,)=>{
             
         })
         corazon.addEventListener('mouseover', ()=>{
-            corazon.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav-hover.svg')
+            corazon.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav-hover.svg')
         })
         corazon.addEventListener('mouseout', ()=>{
-            corazon.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav.svg')
+            corazon.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-fav.svg')
         })
         descarga.addEventListener('click',()=>{
             console.log('Descargar ' + element.title  )
@@ -119,10 +119,10 @@ const showGif = (trendings, contenedor,)=>{
             
         })
         descarga.addEventListener('mouseover', ()=>{
-            descarga.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download-hover.svg')
+            descarga.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download-hover.svg')
         })
         descarga.addEventListener('mouseout', ()=>{
-            descarga.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg')
+            descarga.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-download.svg')
         })
         maximizar.addEventListener('click',()=>{
             divGifMax.style.display = 'flex';
@@ -132,7 +132,7 @@ const showGif = (trendings, contenedor,)=>{
             const salirGifMax = document.createElement('img')
             const divSalirGifMax = document.createElement('div')
             const divbotonesTitulo = document.createElement('div')
-            salirGifMax.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
+            salirGifMax.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
 
             divSalirGifMax.setAttribute('id', 'salirGifMax')
             divSalirGifMax.appendChild(salirGifMax)
@@ -175,10 +175,10 @@ const showGif = (trendings, contenedor,)=>{
 
         })
         maximizar.addEventListener('mouseover', ()=>{
-            maximizar.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-hover.svg')
+            maximizar.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-hover.svg')
         })
         maximizar.addEventListener('mouseout', ()=>{
-            maximizar.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg')
+            maximizar.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-max-normal.svg')
         })
 
     });
@@ -195,7 +195,7 @@ const showSuggestions = term =>{
         const li = document.createElement('li')
         const lupa3 = document.createElement('img')
 
-        lupa3.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
+        lupa3.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
         
         li.textContent= element.name ;
         li.appendChild(lupa3);
@@ -225,7 +225,7 @@ input_buscador.addEventListener('keyup', ()=>{
         input_buscador.style.backgroundColor= 'white';
         
     }else{
-        lupa.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
+        lupa.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/close.svg')
         lupa2.style.display= 'flex'
         contenido_buscador.style.borderBottom= '1px solid #9CAFC3'
     }
@@ -237,7 +237,7 @@ lupa.addEventListener('click',()=>{
     opciones_buscador.innerHTML=''
     lupa2.style.display= 'none'
     contenido_buscador.style.borderBottom= '0px solid #9CAFC3'
-    lupa.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
+    lupa.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
 })
     //Click en sugerencia//
 opciones_buscador.addEventListener('click', (event)=>{
@@ -246,7 +246,7 @@ opciones_buscador.addEventListener('click', (event)=>{
     opciones_buscador.innerHTML=''
     lupa2.style.display= 'none'
     contenido_buscador.style.borderBottom= '0px solid #9CAFC3'
-    lupa.setAttribute('src', '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
+    lupa.setAttribute('src', './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg')
 
 })
 //   BUSCAR     //
@@ -351,7 +351,7 @@ const endPointUpLoad = async()=>{
             let myGifoId = myGif.data.id
             
             console.log(myGifoId); 
-            cargando.src='/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/check.svg'
+            cargando.src='./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/check.svg'
             pcargando.textContent='GIFO subido con éxito'
 
             arrayMisGifos.push(myGifoId)
@@ -439,12 +439,12 @@ accesoMisGifos.addEventListener('click',()=>{
         .then( resp => {
             let corazones = contenedorMisGifos.getElementsByClassName('corazon')
             for(let i = 0; i < corazones.length; i++){
-                corazones[i].src= "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg"
+                corazones[i].src= "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg"
                 corazones[i].addEventListener('mouseover', ()=>{
-                    corazones[i].src= "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-hover.svg"
+                    corazones[i].src= "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-hover.svg"
                 })
                 corazones[i].addEventListener('mouseout', ()=>{
-                    corazones[i].src= "/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg"
+                    corazones[i].src= "./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-trash-normal.svg"
                 })
             }
 
@@ -491,11 +491,11 @@ activar_modonocturno.addEventListener('click', ()=>{
     style.href='./modo_nocturno/style_nocturno/stylenoc.css'
     activar_mododiurno.style.display= 'block'
     activar_modonocturno.style.display= 'none'
-    logo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/Logo-modo-noc.svg'
-    btn_creargifo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/CTA-crar-gifo-modo-noc.svg'
-    lupanoc1.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
-    lupa2.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
-    lupa.src='/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg'
+    logo.src= './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/Logo-modo-noc.svg'
+    btn_creargifo.src= './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/CTA-crar-gifo-modo-noc.svg'
+    lupanoc1.innerHTML='<img class="lupa" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
+    lupa2.innerHTML='<img class="lupa" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg" alt="icon-search">'
+    lupa.src='./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search-mod-noc.svg'
 })
 
 // MODO DIURNO
@@ -504,11 +504,11 @@ activar_mododiurno.addEventListener('click', ()=>{
     style.href='./styles/style.css'
     activar_mododiurno.style.display= 'none'
     activar_modonocturno.style.display= 'block'
-    logo.src= '/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-desktop.svg'
-    btn_creargifo.src= './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg'
-    lupanoc1.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
-    lupa2.innerHTML='<img class="lupa" src="/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
-    lupa.src='/GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg'
+    logo.src= './GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/logo-desktop.svg'
+    btn_creargifo.src= '../GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/button-crear-gifo.svg'
+    lupanoc1.innerHTML='<img class="lupa" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
+    lupa2.innerHTML='<img class="lupa" src="./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg" alt="icon-search">'
+    lupa.src='./GIFOS-UI-Desktop+Mobile-Update/Recursos/assets/icon-search.svg'
 })
 
 
